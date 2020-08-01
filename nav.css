@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .section1 {
+    background:black;
+    height:70%;
+    position:relative;
+  }
+  .section2 {
+    background:black;
+    height: 100px;
+    padding-top:80px;
+  
+    
+  }
+  .section3 {
+    background:black;
+    height: 50%;
+    padding-top:30%;
+  }
+  .section4 {
+    background:black;
+    object-position:bottom;
+    padding-top: 30%;
+   
+    
+  }
+ 
+  
+  
+ 
+  
+  /**************************************************************
+                          /* Navbar styles
+  ***************************************************************/
+  nav {
+    height: 4rem;
+    width: 100%;
+    text-transform: uppercase;
+    border:1px solid red;
+    border-radius: 10px;
+  }
+  
+  nav .navbar__hamburger-btn {
+    font-size: 2rem;
+    color:red;
+    float: right;
+    line-height: 4rem;
+    margin-right: 2rem;
+    cursor: pointer;
+    display: none;
+  }
+  #check {
+    display: none;
+  }
+  
+  .navbar__logo {
+    line-height: 4rem;
+    margin-left: 3rem;
+    font-family: "Manrope", sans-serif;
+    font-size: 2rem;
+    text-transform: capitalize;
+    color:red;
+  }
+  .navbar__logo:hover{
+    color: red;
+  }
+  
+  nav ul {
+    float: right;
+    margin-right: 1rem;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    line-height: 4rem;
+    margin: 0 1rem;
+  }
+  
+  nav ul li a {
+    color:red;
+    font-size: 0.8rem;
+    padding: 0.5rem 0.8rem;
+    border-radius: 0.2rem;
+    font-family: "Questrial", sans-serif;
+    letter-spacing: 0.2rem;
+    text-decoration: none;
+    font-size: small;
+    text-align: left;
+  }
+  
+  nav ul li a:hover {
+    background: red;
+    transition: 0.2s;
+    color: black;
+    border-radius: 25px;
+    margin-top:300px;
+  }
+  
+  @media (max-width: 768px) {
+    nav #check:checked ~ ul {
+      left: 0;
+    }
+  
+    nav .navbar__hamburger-btn {
+      display: block;
+    }
+  
+    nav .navbar__logo {
+      font-size: 2rem;
+      padding-left: 1rem;
+      color:red;
+    }
+  
+    nav ul {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: black;
+      /* z-index: 1; */
+      left: -100%;
+      text-align: center;
+      transition: all 0.8s;
+      margin-right: 0px;
+      padding-left: 0px;
+      border: 1px solid red;
+    }
+  
+    nav ul li {
+      display: block;
+    
+      margin: 5rem 0;
+      line-height: 30px;
+      width: 100%;
+    
+    }
+  
+    nav ul li a {
+      font-size: 1rem;
+      color:red;
+      border-radius: 25px;
+
+    }
+  
+    nav ul li a:hover,
+    a.active {
+      background: red;
+      transition: 0.2s;
+    }
+  }

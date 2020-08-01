@@ -1,0 +1,29 @@
+.welcome{ 
+    background: black; 
+
+  
+   }
+   h1{
+       margin-top: 3%;
+   }
+.glow{
+color: red;
+font-family: sans-serif;
+font-size: 2em;
+cursor: pointer;
+padding-left:4%;
+text-align:center;
+
+}
+.glow:hover{
+transition: .5s;
+animation: glow 1.5s ease-in-out infinite alternate;
+}
+@keyframes glow{
+from{
+text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px red, 0 0 70px red, 0 0 80px red, 0 0 100px red, 0 0 150px red;
+}
+to{
+text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px red, 0 0 35px red, 0 0 40px red, 0 0 50px red, 0 0 75px red;
+}
+}

@@ -1,0 +1,212 @@
+.footer {
+    background-color:black;
+    width: 100%;
+    text-align: left;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    border: 1px solid red;
+    border-radius: 15px;
+    bottom:0px;
+
+  }
+  @media screen and(max-width:700px){
+    .footer{
+      max-width:450px;
+      bottom: 0;
+      box-sizing: content-box;
+      height: 300px;
+      font-size-adjust: inherit;
+      padding-block-end: 60px;
+    }
+  }
+  
+  .footer .footer-left,
+  .footer .footer-center,
+  .footer .footer-right {
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  
+  /* footer left*/
+  
+  .footer .footer-left {
+    width: 33%;
+    padding-right: 15px;
+  }
+  
+  .footer .about {
+    line-height: 20px;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+  }
+  
+  .footer .about span {
+    display: block;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .footer .icons {
+    margin-top: 25px;
+  }
+  
+  .footer .icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color:black;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+  }
+  /*--here we hover the incon color */
+  .footer .icons a.face:hover{
+    border-radius:15px;
+    background-color: #3b5998 ;
+  }
+  .footer .icons a.twit:hover{
+    border-radius:15px;
+    background-color:#1DA1F2;
+  }
+  .footer .icons a.link:hover{
+    border-radius:15px;
+    background-color:#2867B2;
+  }
+  .footer .icons a.google:hover{
+    border-radius:15px;
+    background: linear-gradient(to right, #4285F4 0%, #EA4335 60%, #FBBC05 70%,#34A853 100%)
+  }
+  .footer .icons a.insta:hover{
+    border-radius:15px;
+    background: linear-gradient(to right, #405DE6 30%, #C13584 60%,#FD1D1D 70%,#F77737 100%)
+  
+  }
+  
+  
+  /* footer center*/
+  
+  .footer .footer-center {
+    width: 30%;
+  }
+  
+  .footer .footer-center i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+  }
+  .footer .footer-center i.fa-map-marker{
+    background: linear-gradient(to right, #fab938 10%, #48be30d6 60%,#b40dae 5%,#1f6a74 100%)
+  
+  }
+  
+  .footer .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+    background-color: #2867B2;
+  }
+  .footer .footer-center i.fa-phone{
+      background-color: green;
+  }
+  .footer .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+  }
+  
+  .footer .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+  }
+  
+  .footer .footer-center p a {
+    color: #0099ff;
+    text-decoration: none;
+  }
+  
+  
+  /* footer right*/
+  
+  .footer .footer-right {
+    width: 35%;
+  }
+  
+  .footer h2 {
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: normal;
+    margin: 0;
+  }
+  
+  .footer h2 span {
+    color: #0099ff;
+  }
+  
+  .footer .menu {
+    color: #ffffff;
+    margin: 20px 0 12px;
+    padding: 0;
+  }
+  
+  .footer .menu a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .footer .menu a:hover {
+    color: #0099ff;
+  }
+  
+  
+  .footer .name {
+    color: #0099ff;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+  }
+  .face:hover{
+    background-color: blueviolet;
+  }
+  
+  @media (max-width: 767px) {
+    .footer {
+      font-size: 14px;
+      bottom: 0px;
+    }
+    .footer .footer-left,
+    .footer .footer-center,
+    .footer .footer-right {
+      display: block;
+      width: 100%;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+    .footer .footer-center i {
+      margin-left: 0;
+    }
+  }
